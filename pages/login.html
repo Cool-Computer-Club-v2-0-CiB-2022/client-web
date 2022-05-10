@@ -8,12 +8,17 @@
 </head>
 <body>
     <form id="loginForm">
-        <div class="parent w3-card w3-theme-l2">
-            <p>Sign in:</p>
-
-            <input type="text" name="username" id="loginUsername" placeholder="Username">
-            <input type="password" name="password" id="loginPassword" placeholder="Password">
-            <input type="submit" value="Login" id="loginSubmit">
+        <div class="logInParent w3-card w3-theme-l2">
+            <h1>Sign in:</h1>
+            <div class="username">
+                <input type="text" name="username" id="loginUsername" placeholder="Username">
+            </div>
+            <div class="password">
+                <input type="password" name="password" id="loginPassword" placeholder="Password">
+            </div>
+            <div class="logInButton">
+                <input type="submit" value="Login" id="loginSubmit">
+            </div>
         </div>
     </form>
     <script src="../scripts/login.js"></script>
