@@ -14,11 +14,13 @@
 .username
 {
     color:black;
+    text-align: left;
 }
 
 .password
 {
     color:black;
+    text-align: left;
 }
 
 .logInButton
