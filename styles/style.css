@@ -1,8 +1,6 @@
-html
+body
 {
-    height: 100%;
-    width: 100%;
-    background-image: linear-gradient(#9eb1bb, #4d636f);
+    background-color: linear-gradient(#9eb1bb, #4d636f);
 }
 
 .logInParent
