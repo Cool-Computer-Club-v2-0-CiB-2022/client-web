@@ -21,6 +21,14 @@
 .w3-hover-text-theme:hover {color:#607d8b !important}
 .w3-hover-border-theme:hover {border-color:#607d8b !important}
 
+.logInBox
+{
+    font-size: xx-large;
+}
+
+
+
+
 * {
     font-family: sans-serif;
 }
