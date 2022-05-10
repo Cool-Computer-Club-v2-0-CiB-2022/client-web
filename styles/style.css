@@ -1,3 +1,11 @@
+.logInBox
+{
+    text-align: center;
+    width: 800px;
+    height: 300px;
+}
+
+
 .w3-theme-l5 {color:#000 !important; background-color:#f5f7f8 !important}
 .w3-theme-l4 {color:#000 !important; background-color:#dfe5e8 !important}
 .w3-theme-l3 {color:#000 !important; background-color:#becbd2 !important}
@@ -20,15 +28,6 @@
 .w3-hover-theme:hover {color:#fff !important; background-color:#607d8b !important}
 .w3-hover-text-theme:hover {color:#607d8b !important}
 .w3-hover-border-theme:hover {border-color:#607d8b !important}
-
-.logInBox
-{
-    text-align: center;
-    width: 800px;
-    height: 300px;
-}
-
-
 
 
 * {
