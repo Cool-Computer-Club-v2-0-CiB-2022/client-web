@@ -21,6 +21,9 @@
         <a href="login.html" class="w3-button w3-ripple w3-border-top w3-mobile leftRight w3-border-bottom border-left">Logout</a>
     </div>
 
+
+
+
     <div id="mainDiv2">
         <box id="mainBox2">
             <h2>Add User</h2>
@@ -35,124 +38,58 @@
                 <br>
                            
                 <br>
-                <label class="addAstChecklist" for="DateDecomm">Type:</label>                    
-                <select class="addAstChecklist" name="Type" id="addSlct-Type">
-                    <option class="addSlctObject" value="Server">Server</option>
-                    <option class="addSlctObject" value="Laptop">Laptop</option>
-                    <option class="addSlctObject" value="Desktopx">Desktopx</option>
-                    <option class="addSlctObject" value="Mobile">Mobile</option>
-                    <option class="addSlctObject" value="Tablet">Tablet</option>
+                <label class="addUserChecklist" for="Job Role">Job Role:</label>                    
+                <select class="addUserChecklist" name="slcJobRole" id="addUser-JobRole">
+                    <option class="addSlctUserObject" value="Technician">Server</option>
+                    <option class="addSlctUserObject" value="Service Desk Employee">Laptop</option>
+                    <option class="addSlctUserObject" value="Manager">Desktopx</option>
+                    <option class="addSlctUserObject" value="Mobile">Mobile</option>
+                    <option class="addSlctUserObject" value="Tablet">Tablet</option>
                 </select>  
-                
                 <br>
-                <label class="addAstChecklist" for="DateDecomm">Type Presence:</label>
-                <select class="addAstChecklist" name="Type Presence" id="addSlct-TypePresence">
-                    <option class="addSlctObject" value="Physical">Physical</option>
-                    <option class="addSlctObject" value="Virtual">Virtual</option>
+
+                <label class="addUserChecklist" for="Department">Department:</label>                    
+                <select class="addUserChecklist" name="Department" id="addUser-Department">
+                    <option class="addSlctUserObject" value="Asset Managment Staff">Asset Managment Staff</option>
+                    <option class="addSlctUserObject" value="Service Desk Staff">Service Desk Staff</option>
+                    <option class="addSlctUserObject" value="Management Staff">Management Staff</option>
+                    <option class="addSlctUserObject" value="No Asset Management Staff">No Asset Management Staff</option>
+                    <option class="addSlctUserObject" value="Technician Staff">Technician Staff</option>
                 </select> 
-                
                 <br>
-                <label class="addAstChecklist" for="DateDecomm">Location:</label>
-                <select class="addAstChecklist" name="Location" id="addSlct-Location">
-                    <option class="addSlctObject" value="32409732">32409732</option>
-                    <option class="addSlctObject" value="84393695">84393695</option>
-                    <option class="addSlctObject" value="94648290">94648290</option>
-                    <option class="addSlctObject" value="14260891">14260891</option>
-                    <option class="addSlctObject" value="94648290">94648290</option>
-                </select>  
-                
+
+                <label class="addUserChecklist" for="DateAdded">DateAdded:</label>
+                <input type="text" class="addUserChecklist" name="DateAdded">
                 <br>
-                <label class="addAstChecklist" for="DateDecomm">Location Code:</label>
-                <select class="addAstChecklist" name="Location Code" id="addSlct-LocationCode">
-                    <option class="addSlctObject" value="324-FPS">324-FPS</option>
-                    <option class="addSlctObject" value="843-LMG">843-LMG</option>
-                    <option class="addSlctObject" value="843-OMG">843-OMG</option>
-                    <option class="addSlctObject" value="142-WFH">142-WFH</option>
-                    <option class="addSlctObject" value="946-FIA">946-FIA</option>
+                
+                <label class="addUserChecklist" for="Age">Age:</label>
+                <input type="text" class="addUserChecklist" name="Age">
+                <br>
+            </box> 
+
+
+
+
+
+
+            <box id="addUserBox2">
+                <label class="addAstChecklist" for="AccessLevel">Access Levels:</label>
+                <select class="addAstChecklist" name="AccessLevel" id="addUser-AccessLevel">
+                    <option class="addSlctObject" value="Level-1">Level-1</option>
+                    <option class="addSlctObject" value="Level-2">Level-2</option>
+                    <option class="addSlctObject" value="Level-3">Level-3</option>
+                    <option class="addSlctObject" value="Level-4">Level-4</option>
+                    <option class="addSlctObject" value="Level-5">Level-5</option>
                 </select> 
-                
             </box>
-            <box id="box2">
-                <label class="addAstChecklist" for="DateDecomm">Location Type:</label>
-                <select class="addAstChecklist" name="Location Type" id="addSlct-LocationType">
-                    <option class="addSlctObject" value="Server Room">Server Room</option>
-                    <option class="addSlctObject" value="Employee">Employee</option>
-                    <option class="addSlctObject" value="Office">Office</option>
-                </select> 
                 
-                <br>
-                <label class="addAstChecklist" for="DateDecomm">Resolver Queue:</label>
-                <select class="addAstChecklist" name="Resolver Queue" id="addSlct-Resolver Queue">
-                    <option class="addSlctObject" value="BCISYX">BCISYX</option>
-                    <option class="addSlctObject" value="GRNKLD">GRNKLD</option>
-                    <option class="addSlctObject" value="KGORMD">KGORMD</option>
-                    <option class="addSlctObject" value="HGUTHJ">HGUTHJ</option>
-                    <option class="addSlctObject" value="NDVSFG">NDVSFG</option>
-                </select>  
-                
-                <br>
-                <label class="addAstChecklist" for="DateDecomm">Status:</label>
-                <select class="addAstChecklist" name="Status" id="addSlct-Status">
-                    <option class="addSlctObject" value="Installed">Installed</option>
-                    <option class="addSlctObject" value="Decommissioned">Decommissioned</option>
-                </select>  
-                
-                <br>
-                <label class="addAstChecklist" for="DateDecomm">Sub-Status:</label>
-                <select class="addAstChecklist" name="Sub-Status" id="addSlct-Sub-Status">
-                    <option class="addSlctObject" value="Production">Production</option>
-                    <option class="addSlctObject" value="Retired">Retired</option>
-                </select>  
-                
-                <br> 
-                <label class="addAstChecklist" for="DateDecomm">Assigned To:</label>
-                <select class="addAstChecklist" name="Assigned To" id="addSlct-AssignedTo">
-                    <option class="addSlctObject" value="A123456">A123456</option>
-                    <option class="addSlctObject" value="Y389176">Y389176</option>
-                    <option class="addSlctObject" value="F219483">F219483</option>
-                    <option class="addSlctObject" value="B302132">B302132</option>
-                    <option class="addSlctObject" value="K235426">K235426</option>
-                </select>  
-               
-                <br>
-                <label class="addAstChecklist" for="DateDecomm">Billed To:</label>
-                <select class="addAstChecklist" name="Billed To" id="addSlct-BilledTo">
-                    <option class="addSlctObject" value="100999">100999</option>
-                    <option class="addSlctObject" value="321808">321808</option>
-                    <option class="addSlctObject" value="678943">678943</option>
-                    <option class="addSlctObject" value="486470">486470</option>
-                </select>  
-                
+
+
+
+
             </box>
-            <box id="box3">
-                <label class="addAstChecklist" for="DateCreated">Date Created:</label>  
-                <input type="text" class="addAstChecklist" name="Date Created">
-                
-                <br>
-                <label class="addAstChecklist" for="DateActive">Date Active:</label>  
-                <input type="text" class="addAstChecklist" name="Date Active">
-                
-                <br>
-                <label class="addAstChecklist" for="DateInstalled">Date Installed:</label> 
-                <input type="text" class="addAstChecklist" name="Date Installed">
-                
-                <br>    
-                <label class="addAstChecklist" for="DateDecomm">Date Decomm:</label>
-                <input type="text" class="addAstChecklist" name="Date Decomm">
-            
-                <br>
-                <label class="addAstChecklist" for="DateDecomm">Maintenance Window:</label>
-                <select class="addAstChecklist" name="Maintenance Window" id="addSlct-MaintenanceWindow">
-                    <option class="addSlctObject" value="Mon 10:00 - Mon 11:00">Mon 10:00 - Mon 11:00</option>
-                    <option class="addSlctObject" value="Tues 14:00 - Tues 14:30">Tues 14:00 - Tues 14:30</option>
-                    <option class="addSlctObject" value="Wed 10:00 - Wed 11:00">Wed 10:00 - Wed 11:00</option>
-                    <option class="addSlctObject" value="Fri 12:00 - Fri 13:00">Fri 12:00 - Fri 13:00</option>
-                    <option class="addSlctObject" value="N/A">N/A</option>
-                </select> 
-                
-            </box>
-            <box id="box4">
-                <button class="button" id="submitAdd">Submit</button>
+            <box id="addUserbox4">
+                <button class="button" id="submitAddUser">Submit</button>
             </box>
         </box>
     </div>

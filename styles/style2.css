@@ -47,3 +47,53 @@
     margin-left: 1%;
     margin-bottom: 17%;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+#addUserBox1{
+    float: left;
+    margin-left: 3%;
+    margin-top: 2%;
+    height: 600px;
+    width: 400px;
+
+    border-style: solid;
+    border-color: black;
+    border-width: 3px;
+}
+
+#addUserBox2{
+    float: left;
+    margin-left: 15%;
+    margin-top: 2%;
+    width: 400px;
+    height: 600px;
+
+    border-style: solid;
+    border-color: black;
+    border-width: 3px;
+}
+
+#addUserbox4{
+    float: left;
+    margin-top: 33%;
+    margin-right: 35%;
+
+}
+
+
+.addUserChecklist{
+    margin-top: 1%;
+    margin-left: 1%;
+    margin-bottom: 17%;
+}
