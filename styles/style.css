@@ -178,7 +178,18 @@
     float: left;
 }
 
+#cccLogo
+{
+    position: relative;
+    z-index: 1;
+}
 
+#dwkLogo
+{
+    position: relative;
+    z-index: 1;
+    float: left;
+}
 
 
 .w3-theme-l5 {color:#000 !important; background-color:#f5f7f8 !important}
