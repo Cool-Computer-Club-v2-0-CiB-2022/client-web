@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cool Computer Club v2.0 CiB 2022 Client Prototype</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/w3.css">
+    <link rel="stylesheet" href="../styles/styleSelectedAsset.css">
+</head>
+
+<body>
+    <!-- Header -->
+	<div id="header" class="w3-container w3-theme-d3">
+		<h1>Asset Management System : Assets<img id="dwkLogo" src="../DWK_trans.png" width="3.5%" height="3.5%"></h1>
+	</div>
+    <!-- navbar  -->
+	<div id="navbar" class="w3-theme-d3 w3-bar w3-cell-row w3-mobile">
+        <a href="assetHome.html" class="w3-button w3-ripple w3-border-top w3-mobile leftRight border-bottom border-right">Assets</a>
+        <a href="userHome.html" class="w3-button w3-ripple w3-border-top w3-mobile mid border-bottom ">Users</a>
+        <a href="login.html" class="w3-button w3-ripple w3-border-top w3-mobile leftRight w3-border-bottom border-left">Logout</a>
+    </div>
+
+
+    <div class="w3-row-padding">
+        <div id="selectedAssetPart1" class="w3-col s3">
+            <h3>WELCOME<br>[Insert Job Role Here]</h3>
+        </div>
+        <div id="selectedAssetPart2" class="w3-col s6">
+            <div id="selectedAssetLabel" class="w3-bottombar">
+                <br>
+                <h3>AssetID: [Insert assetID]</h3>
+                <h3>Asset Name: [Insert assetName]</h3>
+            </div>
+            <br>
+            <h4>Asset Details:</h4>
+            <div id="selectedAssetDetails" class="w3-row-padding">
+                <div id="leftSide" class="w3-col s6">
+                    <label>Asset OS:</label>
+                    <input type="text" class="txtBox" placeholder="Asset OS" />
+                    <br>
+                    <label>Asset Type:</label>
+                    <input type="text" class="txtBox" placeholder="Asset Type" />
+                    <br>
+                    <label>Asset Type Presence:</label>
+                    <input type="text" class="txtBox" placeholder="Asset Type Presence" />
+                    <br>
+                    <label>Location:</label>
+                    <input type="text" class="txtBox" placeholder="Location" />
+                    <br>
+                    <label>Location Code:</label>
+                    <input type="text" class="txtBox" placeholder="Location Code" />
+                    <br>
+                    <label>Location Type</label>
+                    <input type="text" class="txtBox" placeholder="Location Type" />
+                    <br>
+                    <label>Assigned To:</label>
+                    <input type="text" class="txtBox" placeholder="Assignned To" />
+                    <br>
+                    <label>Billed To:</label>
+                    <input type="text" class="txtBox" placeholder="Billed To" />
+                    <br>
+                </div>
+                <div id="RightSide" class="w3-col s6">
+                    <label>Resolver Queue:</label>
+                    <input type="text" class="txtBox" placeholder="Resolver Queue" />
+                    <br>
+                    <label>Status:</label>
+                    <input type="text" class="txtBox" placeholder="Status" />
+                    <br>
+                    <label>Sub Status:</label>
+                    <input type="text" class="txtBox" placeholder="Sub Status" />
+                    <br>
+                    <label>Date Created:</label>
+                    <input type="text" class="txtBox" placeholder="Date Created" />
+                    <br>
+                    <label>Date Active:</label>
+                    <input type="text" class="txtBox" placeholder="Date Active" />
+                    <br>
+                    <label>Date Installed:</label>
+                    <input type="text" class="txtBox" placeholder="Date Installed" />
+                    <br>
+                    <label>Date Decommisioned:</label>
+                    <input type="text" class="txtBox" placeholder="Date Decommisioned" />
+                    <br>
+                    <label>Maintenance Window:</label>
+                    <input type="text" class="txtBox" placeholder="Maintenance Window" />
+                    <br>
+                </div>
+            </div>
+        </div>
+
+        <div id="selectedAssetPart3" class="w3-col s3 w3-display-bottomright">
+            <button id="btnSaveChangesAsset" class="w3-button w3-theme-d5 w3-ripple w3-border w3-border-black w3-display-right">Save Changes To Asset</button>
+        </div>
+
+    </div>
+
+
+
+        <footer id="foot" class="center w3-theme-d5">
+            Powered By Cool Computer Club v2.0
+            <img id="cccLogo" src="../CCC_logo.jpg" width="1.5%" height="1.5%">
+        </footer>
+    
+    
+        <script src="../scripts/api.js"></script>
+        <script src="../scripts/asset.js"></script>
+    
+</body>
+</html>
+    
