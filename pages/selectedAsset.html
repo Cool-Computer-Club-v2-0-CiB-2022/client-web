@@ -91,7 +91,10 @@
         </div>
 
         <div id="selectedAssetPart3" class="w3-col s3 w3-display-bottomright">
-            <button id="btnSaveChangesAsset" class="w3-button w3-theme-d5 w3-ripple w3-border w3-border-black w3-display-right">Save Changes To Asset</button>
+            <div class="w3-display-right">
+                <button id="btnSaveChangesAsset" class="w3-button w3-theme-d5 w3-ripple w3-border w3-border-black" onclick="saveChanges()">Save Changes To Asset</button>
+                <button id="btnSaveChangesAsset" class="w3-button w3-theme-d5 w3-ripple w3-border w3-border-black" onclick="maintenanceRequest()">Request Maintenance</button>
+            </div>
         </div>
 
     </div>
@@ -106,7 +109,14 @@
     
         <script src="../scripts/api.js"></script>
         <script src="../scripts/asset.js"></script>
-    
+<script>
+    function saveChanges() {
+        alert("Changes have been saved.");
+    }
+    function maintenanceRequest() {
+        alert("Maintenance request has been sent to the Technician Department.");
+    }
+</script>
 </body>
 </html>
     
