@@ -79,6 +79,7 @@ body
 #navbar
 {
     font-size: 140%;
+    word-spacing: -1em;
 }
 
 .sticky {

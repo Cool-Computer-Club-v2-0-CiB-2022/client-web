@@ -4,21 +4,144 @@
     <meta charset="UTF-8">
     <title>Report Page</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="stylesheet" href="../styles/style2.css">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/w3.css">
 </head>
 
 <body>
-    <div id="Header">
-        <h1>Assets Reports</h1>
-
+    <div id="header" class="w3-container w3-theme-d3 w3-card">
+		<h1>Asset Report Generator</h1>
+	</div>
+    <!-- <navbar  -->
+	<div id="navbar" class="w3-theme-d3 w3-bar w3-cell-row w3-mobile">
+        <a href="assetHome.html" class="w3-button w3-ripple w3-border-top w3-mobile leftRight border-bottom border-right">Assets</a>
+        <a href="userHome.html" class="w3-button w3-ripple w3-border-top w3-mobile mid border-bottom ">Users</a>
+        <a href="login.html" class="w3-button w3-ripple w3-border-top w3-mobile leftRight w3-border-bottom border-left">Logout</a>
     </div>
 
+    <div id="main">
+        <box id="main2">
+            <button id="GenerateReport">Generate Report</button>
+
+            <div id="assetAtCond">
+                <h2>Select Asset By Condition:</h2>
+                <div><label for="conditionalStatment">Conditional Statment:</label>
+                    <input type="text" id="condState" class="disabledBox" value="Where">
+                </div>
+
+                <div><label for="selectAttribute">Select Attribute:</label>
+                    <select name="attribute" id="slctAtt1">
+                        <option value="Asset Inventory Number">Asset Inventory Number</option>
+                        <option value="Asset Name">Asset Name</option>
+                        <option value="Type">Type</option>
+                        <option value="Type Presence">Type Presence</option>
+                        <option value="Location">Location</option>
+                        <option value="Location Code">Location Code</option>
+                        <option value="Location Type">Location Type</option>
+                        <option value="Status">Status</option>
+                        <option value="Sub-Status">Sub-Status</option>
+                        <option value="Assigned to">Assigned to</option>
+                        <option value="Billed to">Billed to</option>
+                        <option value="Date Created">Date Created</option>
+                        <option value="Date Active">Date Active</option>
+                        <option value="Date Installed">Date Installed</option>
+                        <option value="Date Decomm">Date Decomm</option>
+                        <option value="Maintenance Window">Maintenance Window</option>
+                    </select>
+                </div>
+
+                <div><label for="binaryOperator">Condition Operator:</label>
+                    <input type="text" id="condOpr" class="enabledBox">
+                </div>
+
+                <div><label for="inputValue">Input value:</label>
+                    <input type="text" id="inptVal" class="enabledBox">
+                </div>
+
+            </div>
 
 
 
+            <div id="attributeList">
+                <h2>Attribute List:</h2>
+                <box id="atListBox">
+                    <input type="checkbox" class="atList" name="attribute1" value="Asset Inventory Number">
+                    <label for="attribute1">Asset Inventory Number</label>
+
+                    <input type="checkbox" class="atList" name="attribute2" value="Asset Name">
+                    <label for="attribute2">Asset Name</label>
+
+                    <input type="checkbox" class="atList" name="attribute3" value="Type">
+                    <label for="attribute3">Type</label>
+
+                    <input type="checkbox" class="atList" name="attribute4" value="Type Presence">
+                    <label for="attribute4">Type Presence</label>
+
+                    <input type="checkbox" class="atList" name="attribute5" value="Location">
+                    <label for="attribute5">Location</label>
+
+                    <input type="checkbox" class="atList" name="attribute6" value="Location Code">
+                    <label for="attribute6">Location Code</label>
+
+                    <input type="checkbox" class="atList" name="attribute7" value="Location Type">
+                    <label for="attribute7">Location Type</label>
+
+                    <input type="checkbox" class="atList" name="attribute8" value="Status">
+                    <label for="attribute8">Status</label>
+
+                    <input type="checkbox" class="atList" name="attribute9" value="Sub-Status">
+                    <label for="attribute9">Sub-Status</label>
+
+                    <input type="checkbox" class="atList" name="attribute10" value="Assigned to">
+                    <label for="attribute10">Assigned to</label>
+
+                    <input type="checkbox" class="atList" name="attribute11" value="Billed to">
+                    <label for="attribute11">Billed to</label>
+
+                    <input type="checkbox" class="atList" name="attribute12" value="Date Created">
+                    <label for="attribute12">Date Created</label>
+
+                    <input type="checkbox" class="atList" name="attribute13" value="Date Active">
+                    <label for="attribute13">Date Active</label>
+
+                    <input type="checkbox" class="atList" name="attribute14" value="Date Installed">
+                    <label for="attribute14">Date Installed</label>
+
+                    <input type="checkbox" class="atList" name="attribute15" value="Date Decomm">
+                    <label for="attribute15">Date Decomm</label>
+
+                    <input type="checkbox" class="atList" name="attribute16" value="Maintenance Window">
+                    <label for="attribute16">Maintenance Window</label>
+                </box>
+            </div>
 
 
 
+            <div id="orderBy">
+                <h2>Order By:</h2>
+                <div><label for="selectAttribute">Select Attribute:</label>
+                    <select name="attribute" id="slctAtt2">
+                        <option value="Asset Inventory Number">Asset Inventory Number</option>
+                        <option value="Asset Name">Asset Name</option>
+                        <option value="Type">Type</option>
+                        <option value="Type Presence">Type Presence</option>
+                        <option value="Location">Location</option>
+                        <option value="Location Code">Location Code</option>
+                        <option value="Location Type">Location Type</option>
+                        <option value="Status">Status</option>
+                        <option value="Sub-Status">Sub-Status</option>
+                        <option value="Assigned to">Assigned to</option>
+                        <option value="Billed to">Billed to</option>
+                        <option value="Date Created">Date Created</option>
+                        <option value="Date Active">Date Active</option>
+                        <option value="Date Installed">Date Installed</option>
+                        <option value="Date Decomm">Date Decomm</option>
+                        <option value="Maintenance Window">Maintenance Window</option>
+                    </select>
+                </div>
+            </div>
+        </box>
+     </div>
 </body>
 
 
