@@ -121,13 +121,20 @@ body
 
 .scrollList
 {
-    overflow:scroll;
-    max-height:80vh;
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+    overflow-y: scroll; /* Add vertical scrollbar */
+    max-height:78vh;
 }
 
 #foot.center {
-    text-align: center;
+    position: absolute;
+    bottom: 0vh;
     width: 100%;
+    color:#fff;
+    background-color:#303e45;
+    text-align: center;
+    margin: auto;
+    padding: 1vh;
 }
 
 .w3-theme-l5 {color:#000 !important; background-color:#f5f7f8 !important}
