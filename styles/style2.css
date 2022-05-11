@@ -1,0 +1,49 @@
+#box1{
+    float: left;
+    margin-left: 3%;
+    margin-top: 2%;
+    height: 600px;
+    width: 400px;
+
+    border-style: solid;
+    border-color: black;
+    border-width: 3px;
+}
+
+#box2{
+    float: left;
+    margin-left: 15%;
+    margin-top: 2%;
+    width: 400px;
+    height: 600px;
+
+    border-style: solid;
+    border-color: black;
+    border-width: 3px;
+}
+
+#box3{
+    float: left;
+    margin-left: 15%;
+    margin-top: 2%;
+    height: 600px;
+    width: 400px;
+
+    border-style: solid;
+    border-color: black;
+    border-width: 3px;
+}
+
+#box4{
+    float: left;
+    margin-left: 3%;
+    margin-top: 1%;
+
+}
+
+
+.addAstChecklist{
+    margin-top: 1%;
+    margin-left: 1%;
+    margin-bottom: 17%;
+}

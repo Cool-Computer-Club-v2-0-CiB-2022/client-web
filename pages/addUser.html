@@ -12,7 +12,7 @@
 <body style="max-height:100%;">
     <!-- Header -->
 	<div id="header" class="w3-container w3-theme-d3 w3-card">
-		<h1>Asset Management System : Add Asset:<img id="dwkLogo" src="../DWK_trans.png" width="3.5%" height="3.5%"></h1>
+		<h1>Asset Management System : Add User:<img id="dwkLogo" src="../DWK_trans.png" width="3.5%" height="3.5%"></h1>
 	</div>
     <!-- navbar  -->
 	<div id="navbar" class="w3-theme-d3 w3-bar w3-cell-row w3-mobile">
@@ -21,23 +21,18 @@
         <a href="login.html" class="w3-button w3-ripple w3-border-top w3-mobile leftRight w3-border-bottom border-left">Logout</a>
     </div>
 
-    <div id="mainDiv">
-        <box id="mainBox">
-            <h2>Add Asset</h2>
-            <button class="button" id="cancelAdd">cancel</button>
-            <box id="box1">
-                <label class="addAstChecklist" for="AssetInventoryNumber">Asset Inventory Number</label>
-                <input type="text" class="addAstChecklist" name="Asset Inventory Number" value="Auto-generated" disabled required>
-                
+    <div id="mainDiv2">
+        <box id="mainBox2">
+            <h2>Add User</h2>
+            <button class="button" id="cancelUserAdd">cancel</button>
+            <box id="addUserBox1">
+                <label class="addUserChecklist" for="UserInventoryNumber">Asset User Number:</label>
+                <input type="text" class="addUserChecklist" name="User Inventory Number" value="Auto-generated" disabled required>
                 <br> 
-                <label class="addAstChecklist" for="DateDecomm">Asset Name:</label>  
-                <select class="addAstChecklist" name="Asset Name" id="addSlct-AssetName">
-                    <option class="addSlctObject" value="IBM Rack 2.0">IBM Rack 2.0"</option>
-                    <option class="addSlctObject" value="HP XPS">HP XPS</option>
-                    <option class="addSlctObject" value="Dell Optiplex">Dell Optiplex</option>
-                    <option class="addSlctObject" value="Dell 5">Dell 5</option>
-                    <option class="addSlctObject" value="Samsung S22">Samsung S22</option>
-                </select>
+
+                <label class="addUserChecklist" for="UserName">Asset User Name:</label>
+                <input type="text" class="addUserChecklist" name="User Inventory Number">
+                <br>
                            
                 <br>
                 <label class="addAstChecklist" for="DateDecomm">Type:</label>                    
