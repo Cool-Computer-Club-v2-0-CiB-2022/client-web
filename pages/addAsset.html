@@ -25,10 +25,10 @@
             <h2>Add Asset</h2>
 
             <box id="box1">
-                <input type="text" class="atList" name="Asset Inventory Number" value="Auto-generated" disabled required>
-                <label for="attribute2">Asset Name</label>
-
-                <select class="addAstChecklist" name="Asset Name" id="addSlct-AsseName">
+                <input type="text" class="addAstChecklist" name="Asset Inventory Number" value="Auto-generated" disabled required>
+                <label class="addAstChecklist" for="attribute2">Asset Inventory Number</label>
+                <br>
+                <select class="addAstChecklist" name="Asset Name" id="addSlct-AssetName">
                     <option class="addSlctObject" value="IBM Rack 2.0"></option>
                     <option class="addSlctObject" value="HP XPS"></option>
                     <option class="addSlctObject" value="Dell Optiplex"></option>
@@ -36,49 +36,111 @@
                     <option class="addSlctObject" value="Samsung S22"></option>
                 </select>                
                 <br>                    
-                <input type="text" class="atList" name="attribute3" value="Type">
-                <label for="attribute3">Type</label>
+                <select class="addAstChecklist" name="Type" id="addSlct-Type">
+                    <option class="addSlctObject" value="Server"></option>
+                    <option class="addSlctObject" value="Laptop"></option>
+                    <option class="addSlctObject" value="Desktopx"></option>
+                    <option class="addSlctObject" value="Mobile"></option>
+                    <option class="addSlctObject" value="Tablet"></option>
+                </select>  
                 <br>
-                <input type="text" class="atList" name="attribute4" value="Type Presence">
-                <label for="attribute4">Type Presence</label>
+                <select class="addAstChecklist" name="Type Presence" id="addSlct-TypePresence">
+                    <option class="addSlctObject" value="Physical"></option>
+                    <option class="addSlctObject" value="Virtual"></option>
+                </select>  
                 <br>
-                <input type="text" class="atList" name="attribute5" value="Location">
-                <label for="attribute5">Location</label>
+                <select class="addAstChecklist" name="Location" id="addSlct-Location">
+                    <option class="addSlctObject" value="32409732"></option>
+                    <option class="addSlctObject" value="84393695"></option>
+                    <option class="addSlctObject" value="94648290"></option>
+                    <option class="addSlctObject" value="14260891"></option>
+                    <option class="addSlctObject" value="94648290"></option>
+                </select>  
                 <br>
-                <input type="text" class="atList" name="attribute6" value="Location Code">
-                <label for="attribute6">Location Code</label>
+                <select class="addAstChecklist" name="Location Code" id="addSlct-LocationCode">
+                    <option class="addSlctObject" value="324-FPS"></option>
+                    <option class="addSlctObject" value="843-LMG"></option>
+                    <option class="addSlctObject" value="843-OMG"></option>
+                    <option class="addSlctObject" value="142-WFH"></option>
+                    <option class="addSlctObject" value="946-FIA"></option>
+                </select>  
             </box>
             <box id="box2">
-                <input type="text" class="atList" name="attribute7" value="Location Type">
-                <label for="attribute7">Location Type</label>
+                <select class="addAstChecklist" name="Location Type" id="addSlct-LocationType">
+                    <option class="addSlctObject" value="Server Room"></option>
+                    <option class="addSlctObject" value="Employee"></option>
+                    <option class="addSlctObject" value="Office"></option>
+                </select>  
                 <br>
-                <input type="text" class="atList" name="attribute8" value="Status">
-                <label for="attribute8">Status</label>
+                <select class="addAstChecklist" name="Resolver Queue" id="addSlct-Resolver Queue">
+                    <option class="addSlctObject" value="BCISYX"></option>
+                    <option class="addSlctObject" value="GRNKLD"></option>
+                    <option class="addSlctObject" value="KGORMD"></option>
+                    <option class="addSlctObject" value="HGUTHJ"></option>
+                    <option class="addSlctObject" value="NDVSFG"></option>
+                </select>  
                 <br>
-                <input type="text" class="atList" name="attribute9" value="Sub-Status">
-                <label for="attribute9">Sub-Status</label>
+                <select class="addAstChecklist" name="Status" id="addSlct-Status">
+                    <option class="addSlctObject" value="Installed"></option>
+                    <option class="addSlctObject" value="Decommissioned"></option>
+                </select>  
                 <br>
-                <input type="text" class="atList" name="attribute10" value="Assigned to">
-                <label for="attribute10">Assigned to</label>
+                <select class="addAstChecklist" name="Location Code" id="addSlct-LocationCode">
+                    <option class="addSlctObject" value="324-FPS"></option>
+                    <option class="addSlctObject" value="843-LMG"></option>
+                    <option class="addSlctObject" value="843-OMG"></option>
+                    <option class="addSlctObject" value="142-WFH"></option>
+                    <option class="addSlctObject" value="946-FIA"></option>
+                </select>  
                 <br>
-                <input type="text" class="atList" name="attribute11" value="Billed to">
-                <label for="attribute11">Billed to</label>
+                <select class="addAstChecklist" name="Location Code" id="addSlct-LocationCode">
+                    <option class="addSlctObject" value="324-FPS"></option>
+                    <option class="addSlctObject" value="843-LMG"></option>
+                    <option class="addSlctObject" value="843-OMG"></option>
+                    <option class="addSlctObject" value="142-WFH"></option>
+                    <option class="addSlctObject" value="946-FIA"></option>
+                </select>  
                 <br>
-                <input type="text" class="atList" name="attribute12" value="Date Created">
-                <label for="attribute12">Date Created</label>
+                <select class="addAstChecklist" name="Location Code" id="addSlct-LocationCode">
+                    <option class="addSlctObject" value="324-FPS"></option>
+                    <option class="addSlctObject" value="843-LMG"></option>
+                    <option class="addSlctObject" value="843-OMG"></option>
+                    <option class="addSlctObject" value="142-WFH"></option>
+                    <option class="addSlctObject" value="946-FIA"></option>
+                </select>  
             </box>
             <box id="box3">
-                <input type="text" class="atList" name="attribute13" value="Date Active">
-                <label for="attribute13">Date Active</label>
+                <select class="addAstChecklist" name="Location Code" id="addSlct-LocationCode">
+                    <option class="addSlctObject" value="324-FPS"></option>
+                    <option class="addSlctObject" value="843-LMG"></option>
+                    <option class="addSlctObject" value="843-OMG"></option>
+                    <option class="addSlctObject" value="142-WFH"></option>
+                    <option class="addSlctObject" value="946-FIA"></option>
+                </select>  
                 <br>
-                <input type="text" class="atList" name="attribute14" value="Date Installed">
-                <label for="attribute14">Date Installed</label>
+                <select class="addAstChecklist" name="Location Code" id="addSlct-LocationCode">
+                    <option class="addSlctObject" value="324-FPS"></option>
+                    <option class="addSlctObject" value="843-LMG"></option>
+                    <option class="addSlctObject" value="843-OMG"></option>
+                    <option class="addSlctObject" value="142-WFH"></option>
+                    <option class="addSlctObject" value="946-FIA"></option>
+                </select>  
                 <br>
-                <input type="text" class="atList" name="attribute15" value="Date Decomm">
-                <label for="attribute15">Date Decomm</label>
+                <select class="addAstChecklist" name="Location Code" id="addSlct-LocationCode">
+                    <option class="addSlctObject" value="324-FPS"></option>
+                    <option class="addSlctObject" value="843-LMG"></option>
+                    <option class="addSlctObject" value="843-OMG"></option>
+                    <option class="addSlctObject" value="142-WFH"></option>
+                    <option class="addSlctObject" value="946-FIA"></option>
+                </select>  
                 <br>
-                <input type="text" class="atList" name="attribute16" value="Maintenance Window">
-                <label for="attribute16">Maintenance Window</label>
+                <select class="addAstChecklist" name="Location Code" id="addSlct-LocationCode">
+                    <option class="addSlctObject" value="324-FPS"></option>
+                    <option class="addSlctObject" value="843-LMG"></option>
+                    <option class="addSlctObject" value="843-OMG"></option>
+                    <option class="addSlctObject" value="142-WFH"></option>
+                    <option class="addSlctObject" value="946-FIA"></option>
+                </select>  
             </box>
         </box>
     </div>
