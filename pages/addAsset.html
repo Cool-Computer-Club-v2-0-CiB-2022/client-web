@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Cool Computer Club v2.0 CiB 2022 Client Prototype</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/w3.css">
+</head>
+
+<body style="max-height:100%;">
+    <!-- Header -->
+	<div id="header" class="w3-container w3-theme-d3 w3-card">
+		<h1>Asset Management System : User<img id="dwkLogo" src="../DWK_trans.png" width="3.5%" height="3.5%"></h1>
+	</div>
+    <!-- navbar  -->
+	<div id="navbar" class="w3-theme-d3 w3-bar w3-cell-row w3-mobile">
+        <a href="assetHome.html" class="w3-button w3-ripple w3-border-top w3-mobile leftRight border-bottom border-right">Assets</a>
+        <a href="userHome.html" class="w3-button w3-ripple w3-border-top w3-mobile mid border-bottom ">Users</a>
+        <a href="login.html" class="w3-button w3-ripple w3-border-top w3-mobile leftRight w3-border-bottom border-left">Logout</a>
+    </div>
+
+    <div id="main">
+        <box id="main2">
+            <h2>Add Asset</h2>
+            <button class="button" id="cancelAdd">cancel</button>
+            <box id="box1">
+                <input type="text" class="addAstChecklist" name="Asset Inventory Number" value="Auto-generated" disabled required>
+                <label class="addAstChecklist" for="AssetInventoryNumber">Asset Inventory Number</label>
+                <br>
+                <select class="addAstChecklist" name="Asset Name" id="addSlct-AssetName">
+                    <option class="addSlctObject" value="IBM Rack 2.0"></option>
+                    <option class="addSlctObject" value="HP XPS"></option>
+                    <option class="addSlctObject" value="Dell Optiplex"></option>
+                    <option class="addSlctObject" value="Dell 5"></option>
+                    <option class="addSlctObject" value="Samsung S22"></option>
+                </select>                
+                <br>                    
+                <select class="addAstChecklist" name="Type" id="addSlct-Type">
+                    <option class="addSlctObject" value="Server"></option>
+                    <option class="addSlctObject" value="Laptop"></option>
+                    <option class="addSlctObject" value="Desktopx"></option>
+                    <option class="addSlctObject" value="Mobile"></option>
+                    <option class="addSlctObject" value="Tablet"></option>
+                </select>  
+                <br>
+                <select class="addAstChecklist" name="Type Presence" id="addSlct-TypePresence">
+                    <option class="addSlctObject" value="Physical"></option>
+                    <option class="addSlctObject" value="Virtual"></option>
+                </select>  
+                <br>
+                <select class="addAstChecklist" name="Location" id="addSlct-Location">
+                    <option class="addSlctObject" value="32409732"></option>
+                    <option class="addSlctObject" value="84393695"></option>
+                    <option class="addSlctObject" value="94648290"></option>
+                    <option class="addSlctObject" value="14260891"></option>
+                    <option class="addSlctObject" value="94648290"></option>
+                </select>  
+                <br>
+                <select class="addAstChecklist" name="Location Code" id="addSlct-LocationCode">
+                    <option class="addSlctObject" value="324-FPS"></option>
+                    <option class="addSlctObject" value="843-LMG"></option>
+                    <option class="addSlctObject" value="843-OMG"></option>
+                    <option class="addSlctObject" value="142-WFH"></option>
+                    <option class="addSlctObject" value="946-FIA"></option>
+                </select>  
+            </box>
+            <box id="box2">
+                <select class="addAstChecklist" name="Location Type" id="addSlct-LocationType">
+                    <option class="addSlctObject" value="Server Room"></option>
+                    <option class="addSlctObject" value="Employee"></option>
+                    <option class="addSlctObject" value="Office"></option>
+                </select>  
+                <br>
+                <select class="addAstChecklist" name="Resolver Queue" id="addSlct-Resolver Queue">
+                    <option class="addSlctObject" value="BCISYX"></option>
+                    <option class="addSlctObject" value="GRNKLD"></option>
+                    <option class="addSlctObject" value="KGORMD"></option>
+                    <option class="addSlctObject" value="HGUTHJ"></option>
+                    <option class="addSlctObject" value="NDVSFG"></option>
+                </select>  
+                <br>
+                <select class="addAstChecklist" name="Status" id="addSlct-Status">
+                    <option class="addSlctObject" value="Installed"></option>
+                    <option class="addSlctObject" value="Decommissioned"></option>
+                </select>  
+                <br>
+                <select class="addAstChecklist" name="Sub-Status" id="addSlct-Sub-Status">
+                    <option class="addSlctObject" value="Production"></option>
+                    <option class="addSlctObject" value="Retired"></option>
+                </select>  
+                <br>
+                <select class="addAstChecklist" name="Assigned To" id="addSlct-AssignedTo">
+                    <option class="addSlctObject" value="A123456"></option>
+                    <option class="addSlctObject" value="Y389176"></option>
+                    <option class="addSlctObject" value="F219483"></option>
+                    <option class="addSlctObject" value="B302132"></option>
+                    <option class="addSlctObject" value="K235426"></option>
+                </select>  
+                <br>
+                <select class="addAstChecklist" name="Billed To" id="addSlct-BilledTo">
+                    <option class="addSlctObject" value="100999"></option>
+                    <option class="addSlctObject" value="321808"></option>
+                    <option class="addSlctObject" value="678943"></option>
+                    <option class="addSlctObject" value="486470"></option>
+                </select>  
+            </box>
+            <box id="box3">
+                <input type="text" class="addAstChecklist" name="Date Created">
+                <label class="addAstChecklist" for="DateCreated">Date Created:</label>  
+                <br>
+                <input type="text" class="addAstChecklist" name="Date Active">
+                <label class="addAstChecklist" for="DateActive">Date Active:</label>  
+                <br>
+                <input type="text" class="addAstChecklist" name="Date Installed">
+                <label class="addAstChecklist" for="DateInstalled">Date Installed:</label> 
+                <br>
+                <input type="text" class="addAstChecklist" name="Date Decomm">
+                <label class="addAstChecklist" for="DateDecomm">Date Decomm:</label>
+                <br>
+                <select class="addAstChecklist" name="Maintenance Window" id="addSlct-MaintenanceWindow">
+                    <option class="addSlctObject" value="Mon 10:00 - Mon 11:00"></option>
+                    <option class="addSlctObject" value="Tues 14:00 - Tues 14:30"></option>
+                    <option class="addSlctObject" value="Wed 10:00 - Wed 11:00"></option>
+                    <option class="addSlctObject" value="Fri 12:00 - Fri 13:00"></option>
+                    <option class="addSlctObject" value="N/A"></option>
+                </select> 
+            </box>
+            <button class="button" id="submitAdd">Submit</button>
+        </box>
+    </div>
+</body>
+</html>
