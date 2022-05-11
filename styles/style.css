@@ -2,14 +2,20 @@ body {
     margin-bottom:50px;
 }
 
-#footer {
-    position: fixed;
-    height: 50px;
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
-    margin-bottom: 0px;
-}
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   color: white;
+   text-align: center;
+  }
 
 .logInParent
 {
