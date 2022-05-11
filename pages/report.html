@@ -21,7 +21,7 @@
     <br>
     <div id="mainBody" class="w3-row-padding">
         <div id="Left Column" class="w3-col s9">
-            <button id="GenerateReport" class="w3-button w3-theme-d5 w3-ripple w3-border w3-border-black">Generate Report</button>
+            <button id="GenerateReport" class="w3-button w3-theme-d5 w3-ripple w3-border w3-border-black"  onclick="generateReport()">Generate Report</button>
             <div id="assetByCond">
                 <h2>Select Asset By Condition:</h2>
                 <div class="w3-row-padding">
@@ -147,8 +147,11 @@
         </div>
     </div>
 
-
-
+<script>
+    function generateReport() {
+        alert("Report generated and sent to print.");
+    }
+</script>
 </body>
 
 <footer id="foot" class="center w3-theme-d5">
