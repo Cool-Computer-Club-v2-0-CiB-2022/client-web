@@ -27,7 +27,6 @@
     <div id="mainDiv2">
         <box id="mainBox2">
             <h2>Add User</h2>
-            <button class="button" id="cancelUserAdd">cancel</button>
             <box id="addUserBox1">
                 <label class="addUserChecklist" for="UserInventoryNumber">Asset User Number:</label>
                 <input type="text" class="addUserChecklist" name="User Inventory Number" value="Auto-generated" disabled required>
@@ -61,10 +60,6 @@
                 <label class="addUserChecklist" for="DateAdded">DateAdded:</label>
                 <input type="text" class="addUserChecklist" name="DateAdded">
                 <br>
-                
-                <label class="addUserChecklist" for="Age">Age:</label>
-                <input type="text" class="addUserChecklist" name="Age">
-                <br>
             </box> 
 
 
@@ -80,7 +75,12 @@
                     <option class="addSlctObject" value="Level-3">Level-3</option>
                     <option class="addSlctObject" value="Level-4">Level-4</option>
                     <option class="addSlctObject" value="Level-5">Level-5</option>
-                </select> 
+                </select>
+                <br>
+                
+                <label class="addUserChecklist" for="DOB">Date of Birth:</label>
+                <input type="text" class="addUserChecklist" name="DOB">
+                <br>
             </box>
                 
 
@@ -89,9 +89,21 @@
 
             </box>
             <box id="addUserbox4">
-                <button class="button" id="submitAddUser">Submit</button>
+                <a href="userHome.html"><button class="w3-button w3-theme-d5 w3-ripple w3-border w3-border-black" id="cancelUserAdd">Cancel</button></a>
+                <a href="userHome.html"><button class="w3-button w3-theme-d5 w3-ripple w3-border w3-border-black" id="submitAddUser" onclick="generateReport()">Submit</button></a>
             </box>
         </box>
     </div>
+
+<script>
+    function generateReport() {
+        alert("New user succesfully added.");
+    }
+</script>
+
 </body>
+<footer id="foot" class="center w3-theme-d5">
+    Powered By Cool Computer Club v2.0
+    <img id="cccLogo" src="../CCC_logo.jpg" width="1.5%" height="1.5%">
+</footer>
 </html>
