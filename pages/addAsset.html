@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Cool Computer Club v2.0 CiB 2022 Client Prototype</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/w3.css">
+</head>
+
+<body>
+    <!-- Header -->
+	<div id="header" class="w3-container w3-theme-d3 w3-card">
+		<h1>Asset Management System : Assets</h1>
+	</div>
+    <!-- navbar  -->
+	<div id="navbar" class="w3-theme-d3 w3-bar w3-cell-row w3-mobile">
+        <a href="assetHome.html" class="w3-button w3-ripple w3-border-top w3-mobile leftRight border-bottom border-right">Assets</a>
+        <a href="userHome.html" class="w3-button w3-ripple w3-border-top w3-mobile mid border-bottom ">Users</a>
+        <a href="login.html" class="w3-button w3-ripple w3-border-top w3-mobile leftRight w3-border-bottom border-left">Logout</a>
+    </div>
+
+    <div id="main">
+        <box id="main2">
+            <h2>Add Asset</h2>
+
+            <box id="box1">
+                <input type="text" class="atList" name="Asset Inventory Number" value="Auto-generated" disabled required>
+                <label for="attribute2">Asset Name</label>
+
+                <select class="addAstChecklist" name="Asset Name" id="addSlct-AsseName">
+                    <option class="addSlctObject" value="IBM Rack 2.0"></option>
+                    <option class="addSlctObject" value="HP XPS"></option>
+                    <option class="addSlctObject" value="Dell Optiplex"></option>
+                    <option class="addSlctObject" value="Dell 5"></option>
+                    <option class="addSlctObject" value="Samsung S22"></option>
+                </select>                
+                <br>                    
+                <input type="text" class="atList" name="attribute3" value="Type">
+                <label for="attribute3">Type</label>
+                <br>
+                <input type="text" class="atList" name="attribute4" value="Type Presence">
+                <label for="attribute4">Type Presence</label>
+                <br>
+                <input type="text" class="atList" name="attribute5" value="Location">
+                <label for="attribute5">Location</label>
+                <br>
+                <input type="text" class="atList" name="attribute6" value="Location Code">
+                <label for="attribute6">Location Code</label>
+            </box>
+            <box id="box2">
+                <input type="text" class="atList" name="attribute7" value="Location Type">
+                <label for="attribute7">Location Type</label>
+                <br>
+                <input type="text" class="atList" name="attribute8" value="Status">
+                <label for="attribute8">Status</label>
+                <br>
+                <input type="text" class="atList" name="attribute9" value="Sub-Status">
+                <label for="attribute9">Sub-Status</label>
+                <br>
+                <input type="text" class="atList" name="attribute10" value="Assigned to">
+                <label for="attribute10">Assigned to</label>
+                <br>
+                <input type="text" class="atList" name="attribute11" value="Billed to">
+                <label for="attribute11">Billed to</label>
+                <br>
+                <input type="text" class="atList" name="attribute12" value="Date Created">
+                <label for="attribute12">Date Created</label>
+            </box>
+            <box id="box3">
+                <input type="text" class="atList" name="attribute13" value="Date Active">
+                <label for="attribute13">Date Active</label>
+                <br>
+                <input type="text" class="atList" name="attribute14" value="Date Installed">
+                <label for="attribute14">Date Installed</label>
+                <br>
+                <input type="text" class="atList" name="attribute15" value="Date Decomm">
+                <label for="attribute15">Date Decomm</label>
+                <br>
+                <input type="text" class="atList" name="attribute16" value="Maintenance Window">
+                <label for="attribute16">Maintenance Window</label>
+            </box>
+        </box>
+    </div>
+</body>
+
+
+
+
+
+
+
+
+
+
+</html>

@@ -25,11 +25,11 @@
 
             <div id="assetAtCond">
                 <h2>Select Asset By Condition:</h2>
-                <div><label for="conditionalStatment">Conditional Statment:</label>
+                <div id="label1"><label for="conditionalStatment">Conditional Statment:</label>
                     <input type="text" id="condState" class="disabledBox" value="Where" disabled required>
                 </div>
 
-                <div><label for="selectAttribute">Select Attribute:</label>
+                <div id="label2"><label for="selectAttribute">Select Attribute:</label>
                     <select name="attribute" id="slctAtt1">
                         <option value="Asset Inventory Number">Asset Inventory Number</option>
                         <option value="Asset Name">Asset Name</option>
@@ -50,11 +50,11 @@
                     </select>
                 </div>
 
-                <div><label for="binaryOperator">Condition Operator:</label>
+                <div id="label3"><label for="binaryOperator">Condition Operator:</label>
                     <input type="text" id="condOpr" class="enabledBox">
                 </div>
 
-                <div><label for="inputValue">Input value:</label>
+                <div id="label4"><label for="inputValue">Input value:</label>
                     <input type="text" id="inptVal" class="enabledBox">
                 </div>
 
@@ -67,7 +67,7 @@
                 <box id="atListBox">
                     <input type="checkbox" class="atList" name="attribute1" value="Asset Inventory Number">
                     <label for="attribute1">Asset Inventory Number</label>
-                    <br>
+                    <br> 
                     <input type="checkbox" class="atList" name="attribute2" value="Asset Name">
                     <label for="attribute2">Asset Name</label>
                     <br>

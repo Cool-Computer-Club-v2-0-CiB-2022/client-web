@@ -132,6 +132,55 @@
     padding: 1vh;
 }
 
+#attributeList{
+    float: right;
+    margin-right: 3%;
+}
+
+#assetAtCond{
+    margin-left: 3%;
+    width: 100%;
+}
+
+#label1{
+    margin-top: 1%;
+}
+
+#label2{
+    margin-top: 1%;
+}
+
+#label3{
+    margin-top: 1%;
+}
+
+#label4{
+    margin-top: 1%;
+}
+
+#orderBy{
+    margin-left: 3%;
+    margin-top: 10%;
+}
+
+
+#box1{
+    float: left;
+}
+
+
+#box2{
+    float: left;
+    margin-left: 33%;
+}
+
+#box3{
+    float: left;
+}
+
+
+
+
 .w3-theme-l5 {color:#000 !important; background-color:#f5f7f8 !important}
 .w3-theme-l4 {color:#000 !important; background-color:#dfe5e8 !important}
 .w3-theme-l3 {color:#000 !important; background-color:#becbd2 !important}
