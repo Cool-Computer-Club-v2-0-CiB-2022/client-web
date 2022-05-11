@@ -1,7 +1,7 @@
 "use strict";
 
 const api = {
-    domain: "http://localhost:8080/",
+    domain: "https://api.cool-computer-club.com/",
     username: "",
     accessLevel: "",
     request: function (type, endpoint, onFinish, json) {
@@ -25,7 +25,10 @@ const api = {
     // Returns an object with username and accessLevel
     // both will be "null" if not logged in
     getUser: function () {
-        let user = {};
+        let user = {
+            username: "null",
+            accessLevel: "null"
+        };
         let cookies = document.cookie.split("; ");
         for (let cookie of cookies) {
             cookie = cookie.split("=");
