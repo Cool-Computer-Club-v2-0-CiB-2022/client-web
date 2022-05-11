@@ -1,14 +1,24 @@
-body {
+* 
+{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body 
+{
     margin-bottom:50px;
 }
 
-.container {
+.container 
+{
+    background-image: linear-gradient(#9eb1bb, #435761);
     display: flex;
     flex-direction: column;
     height: 100vh;
+
   }
 
-.footer {
+.footer 
+{
    position: fixed;
    left: 0;
    bottom: 0;
@@ -17,12 +27,19 @@ body {
    text-align: center;
   }
 
-.logInParent
+.logo
 {
-    background-image: linear-gradient(#9eb1bb, #4d636f);
+    height: 30px;
+    width: 500px;
+    float: right;
+    margin: 15px;
+    text-align: left;
+}
+
+.logInParent
+{ 
+    background-color: whitesmoke;
     text-align: center;
-    border-style: dotted;
-    border-color: gray;
     position: fixed;
     top: 50%;
     left: 50%;
@@ -35,12 +52,14 @@ body {
 {
     color:black;
     text-align: left;
+    padding: 5px;
 }
 
 .password
 {
     color:black;
     text-align: left;
+    padding: 5px;
 }
 
 .logInButton
@@ -72,6 +91,3 @@ body {
 .w3-hover-text-theme:hover {color:#607d8b !important}
 .w3-hover-border-theme:hover {border-color:#607d8b !important}
 
-* {
-    font-family: Arial, Helvetica, sans-serif;
-}
