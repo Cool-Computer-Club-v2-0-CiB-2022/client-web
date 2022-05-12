@@ -31,9 +31,8 @@ document.addEventListener("DOMContentLoaded", function () {
         for (let asset of Object.values(assets.data)) {
             let assetHtml = "<li>";
             // go through each field of the asset
-            for (let field of Object.keys(asset)) {
+            for (let field of Object.keys(fieldNames)) {
                 assetHtml += "<b>" + fieldNames[field] + ":</b> " + asset[field] + " | ";
-                console.log(field);
             }
             newHtml += assetHtml.slice(0, -3) + "</li>";
         }
