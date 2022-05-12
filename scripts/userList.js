@@ -23,12 +23,12 @@ function getList(query) {
             query = "";
         }
         for (let user of Object.values(users)) {
-            let userHtml = "<li>";
+            let userHtml = "<a href='selectedUser.html?id=" + user["userID"] + "'><li>";
             for (let field of Object.keys(fieldNames)) {
                 userHtml += "<b>" + fieldNames[field] + ":</b> " + user[field] + " | ";
             }
             if (userHtml.toLowerCase().includes(query)) {
-                newHtml += userHtml.slice(0, -3) + "</li>";
+                newHtml += userHtml.slice(0, -3) + "</li></a>";
             }
         }
         if (newHtml == "") {

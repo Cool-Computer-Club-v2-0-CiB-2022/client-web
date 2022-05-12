@@ -40,13 +40,13 @@ function getList(query) {
         }
         // go through each asset and generate its html
         for (let asset of Object.values(assets.data)) {
-            let assetHtml = "<li>";
+            let assetHtml = "<a href='selectedAsset.html?id=" + asset["assetInventoryNumber"] + "'><li>";
             // go through each field of the asset
             for (let field of Object.keys(fieldNames)) {
                 assetHtml += "<b>" + fieldNames[field] + ":</b> " + asset[field] + " | ";
             }
             if (assetHtml.toLowerCase().includes(query)) {
-                newHtml += assetHtml.slice(0, -3) + "</li>";
+                newHtml += assetHtml.slice(0, -3) + "</li></a>";
             }
         }
         if (newHtml == "") {
