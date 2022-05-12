@@ -18,7 +18,8 @@ let fieldNames = {
     dateActive: "Date Active",
     dateInstalled: "Date Installed",
     dateDecomm: "Date Decommissioned",
-    maintenanceWindow: "Maintenance Window"
+    maintenanceWindow: "Maintenance Window",
+    operatingSystem: "Operating System"
 };
 
 document.addEventListener("DOMContentLoaded", getList);
