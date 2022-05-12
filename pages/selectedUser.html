@@ -29,14 +29,14 @@
         <div id="selectedPart2" class="w3-col s6">
             <div id="selectedLabel" class="w3-bottombar">
                 <br>
-                <h3>UserID: [Insert userNumber]</h3>
-                <h3>User Name: [Insert userName]</h3>
+                <h3 id="h3UserID">UserID: [Insert userNumber]</h3>
+                <h3 id="h3UserName">User Name: [Insert userName]</h3>
             </div>
             <br>
             <div id="selectedCenter" class="w3-row-padding">
                 <h4><u>User Details:</u></h4>
                 <label>Job Role:</label>
-                <input type="text" class="txtBox" placeholder="Job Role" />
+                <input type="text" id="jobrole" class="txtBox" placeholder="Job Role" />
                 <br>
                 <label>Department:</label>
                 <input type="text" class="txtBox" placeholder="Department" />
@@ -88,8 +88,7 @@
         </footer>
     
     
-        <script src="../scripts/api.js"></script>
-        <script src="../scripts/asset.js"></script>
+        <script src="../scripts/populateUser.js"></script>
 <script>
     function saveChanges() {
         alert("Changes have been saved.");

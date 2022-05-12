@@ -29,62 +29,68 @@
         <div id="selectedPart2" class="w3-col s6">
             <div id="selectedAssetLabel" class="w3-bottombar">
                 <br>
-                <h3>AssetID: [Insert assetID]</h3>
-                <h3>Asset Name: [Insert assetName]</h3>
+                <h3 id="h3AssetID">AssetID: [Insert assetID]</h3>
+                <h3 id="h3AssetName">Asset Name: [Insert assetName]</h3>
             </div>
             <br>
             <h4><u>Asset Details:</u></h4>
             <div id="selectedAssetDetails" class="w3-row-padding">
                 <div id="leftSide" class="w3-col s6">
-                    <label>Asset OS:</label>
-                    <input type="text" class="txtBox" placeholder="Asset OS" />
+                    <label>AssetID:</label>
+                    <input type="text" class="txtBox" id="input-assetInventoryNumber" placeholder="Asset OS" />
+                    <br>
+                    <label>Asset Name:</label>
+                    <input type="text" class="txtBox" id="input-assetName" placeholder="Asset OS" />
                     <br>
                     <label>Asset Type:</label>
-                    <input type="text" class="txtBox" placeholder="Asset Type" />
+                    <input type="text" class="txtBox" id="input-type" placeholder="Asset OS" />
                     <br>
-                    <label>Asset Type Presence:</label>
-                    <input type="text" class="txtBox" placeholder="Asset Type Presence" />
+                    <label>Asset typePresence:</label>
+                    <input type="text" class="txtBox" id="input-typePresence" placeholder="Asset Type" />
                     <br>
                     <label>Location:</label>
-                    <input type="text" class="txtBox" placeholder="Location" />
+                    <input type="text" class="txtBox" id="input-location" placeholder="Location" />
                     <br>
                     <label>Location Code:</label>
-                    <input type="text" class="txtBox" placeholder="Location Code" />
+                    <input type="text" class="txtBox" id="input-locationCode" placeholder="Location Code" />
                     <br>
                     <label>Location Type</label>
-                    <input type="text" class="txtBox" placeholder="Location Type" />
+                    <input type="text" class="txtBox" id="input-locationType" placeholder="Location Type" />
                     <br>
-                    <label>Assigned To:</label>
-                    <input type="text" class="txtBox" placeholder="Assignned To" />
+                    <label>Resolver Queue:</label>
+                    <input type="text" class="txtBox" id="input-resolverQueue" placeholder="Assignned To" />
                     <br>
-                    <label>Billed To:</label>
-                    <input type="text" class="txtBox" placeholder="Billed To" />
+                    <label>Status:</label>
+                    <input type="text" class="txtBox" id="input-status" placeholder="Billed To" />
                     <br>
                 </div>
                 <div id="RightSide" class="w3-col s6">
-                    <label>Resolver Queue:</label>
-                    <input type="text" class="txtBox" placeholder="Resolver Queue" />
-                    <br>
-                    <label>Status:</label>
-                    <input type="text" class="txtBox" placeholder="Status" />
-                    <br>
                     <label>Sub Status:</label>
-                    <input type="text" class="txtBox" placeholder="Sub Status" />
+                    <input type="text" class="txtBox" id="input-subStatus" placeholder="Resolver Queue" />
+                    <br>
+                    <label>Assigned To:</label>
+                    <input type="text" class="txtBox" id="input-assignedTo" placeholder="Status" />
+                    <br>
+                    <label>Billed To:</label>
+                    <input type="text" class="txtBox" id="input-billedTo" placeholder="Sub Status" />
                     <br>
                     <label>Date Created:</label>
-                    <input type="text" class="txtBox" placeholder="Date Created" />
+                    <input type="text" class="txtBox" id="input-dateCreated" placeholder="Date Created" />
                     <br>
                     <label>Date Active:</label>
-                    <input type="text" class="txtBox" placeholder="Date Active" />
+                    <input type="text" class="txtBox" id="input-dateActive"placeholder="Date Active" />
                     <br>
                     <label>Date Installed:</label>
-                    <input type="text" class="txtBox" placeholder="Date Installed" />
+                    <input type="text" class="txtBox" id="input-dateInstalled" placeholder="Date Installed" />
                     <br>
                     <label>Date Decommisioned:</label>
-                    <input type="text" class="txtBox" placeholder="Date Decommisioned" />
+                    <input type="text" class="txtBox" id="input-dateDecomm" placeholder="Date Decommisioned" />
                     <br>
                     <label>Maintenance Window:</label>
-                    <input type="text" class="txtBox" placeholder="Maintenance Window" />
+                    <input type="text" class="txtBox" id="input-maintenanceWindow" placeholder="Maintenance Window" />
+                    <br>
+                    <label>Operating System:</label>
+                    <input type="text" class="txtBox" id="input-operatingSystem" placeholder="Maintenance Window" />
                     <br>
                 </div>
             </div>
