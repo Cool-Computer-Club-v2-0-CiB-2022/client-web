@@ -31,7 +31,7 @@
             <a href="report.html" class="w3-button w3-theme-d5 w3-margin-top w3-ripple w3-border w3-border-black">Generate Asset Report</a>
             <a href="addAsset.html" class="w3-button w3-theme-d5 w3-margin-top w3-ripple w3-border w3-border-black">Add Asset</a>
             <a href="scanAsset.html" class="w3-button w3-theme-d5 w3-margin-top w3-ripple w3-border w3-border-black">Scan Asset</a>
-            <button id="btnAddAssetTask" class="w3-button w3-theme-d5 w3-margin-top w3-ripple w3-border w3-border-black" onclick="addAssetTask()">Create Add Asset Task</button>
+            <button id="btnAddAssetTask" class="w3-button w3-theme-d5 w3-margin-top w3-ripple w3-border w3-border-black" onclick="addAssetTask()">Create Asset Tag Task</button>
             <br><br>
         </div>
         
@@ -63,7 +63,7 @@
     <script src="../scripts/asset.js"></script>
     <script>
         function addAssetTask() {
-            prompt("Create asset tag task for:\n(Add asset description bellow)", "");
+            prompt("Create asset tag addition or location task for:\n(Add asset description bellow)", "");
             alert("Task sent to technician.")
         }
     </script>
