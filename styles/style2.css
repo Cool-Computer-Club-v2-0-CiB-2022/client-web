@@ -40,12 +40,53 @@
     margin-top: 1%;
 
 }
+#addbox1{
+    float: left;
+    margin-left: 3%;
+    margin-top: 2%;
+    height: 500px;
+    width: 400px;
+
+    border-style: solid;
+    border-color: black;
+    border-width: 3px;
+}
+
+#addbox2{
+    float: left;
+    margin-left: 3%;
+    margin-top: 2%;
+    width: 400px;
+    height: 500px;
+
+    border-style: solid;
+    border-color: black;
+    border-width: 3px;
+}
+
+#addbox3{
+    float: left;
+    margin-left: 3%;
+    margin-top: 2%;
+    height: 500px;
+    width: 350px;
+
+    border-style: solid;
+    border-color: black;
+    border-width: 3px;
+}
+
+#addbox4{
+    float: left;
+    margin-left: 3%;
+    margin-top: 1%;
+
+}
 
 
 .addAstChecklist{
     margin-top: 1%;
     margin-left: 1%;
-    margin-bottom: 17%;
 }
 
 

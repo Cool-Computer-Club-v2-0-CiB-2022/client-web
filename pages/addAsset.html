@@ -24,11 +24,10 @@
     <div id="mainDiv2">
         <box id="mainBox">
             <h2>Add Asset</h2>
-            <button class="button" id="cancelAdd">cancel</button>
-            <box id="box1">
+            <box id="addbox1">
                 <label class="addAstChecklist" for="AssetInventoryNumber">Asset Inventory Number</label>
                 <input type="text" class="addAstChecklist" name="Asset Inventory Number" value="Auto-generated" disabled required>
-                
+                <br>
                 <br> 
                 <label class="addAstChecklist" for="DateDecomm">Asset Name:</label>  
                 <select class="addAstChecklist" name="Asset Name" id="addSlct-AssetName">
@@ -38,7 +37,7 @@
                     <option class="addSlctObject" value="Dell 5">Dell 5</option>
                     <option class="addSlctObject" value="Samsung S22">Samsung S22</option>
                 </select>
-                           
+                <br>
                 <br>
                 <label class="addAstChecklist" for="DateDecomm">Type:</label>                    
                 <select class="addAstChecklist" name="Type" id="addSlct-Type">
@@ -48,14 +47,14 @@
                     <option class="addSlctObject" value="Mobile">Mobile</option>
                     <option class="addSlctObject" value="Tablet">Tablet</option>
                 </select>  
-                
+                <br>
                 <br>
                 <label class="addAstChecklist" for="DateDecomm">Type Presence:</label>
                 <select class="addAstChecklist" name="Type Presence" id="addSlct-TypePresence">
                     <option class="addSlctObject" value="Physical">Physical</option>
                     <option class="addSlctObject" value="Virtual">Virtual</option>
                 </select> 
-                
+                <br>
                 <br>
                 <label class="addAstChecklist" for="DateDecomm">Location:</label>
                 <select class="addAstChecklist" name="Location" id="addSlct-Location">
@@ -65,7 +64,7 @@
                     <option class="addSlctObject" value="14260891">14260891</option>
                     <option class="addSlctObject" value="94648290">94648290</option>
                 </select>  
-                
+                <br>
                 <br>
                 <label class="addAstChecklist" for="DateDecomm">Location Code:</label>
                 <select class="addAstChecklist" name="Location Code" id="addSlct-LocationCode">
@@ -77,14 +76,14 @@
                 </select> 
                 
             </box>
-            <box id="box2">
+            <box id="addbox2">
                 <label class="addAstChecklist" for="DateDecomm">Location Type:</label>
                 <select class="addAstChecklist" name="Location Type" id="addSlct-LocationType">
                     <option class="addSlctObject" value="Server Room">Server Room</option>
                     <option class="addSlctObject" value="Employee">Employee</option>
                     <option class="addSlctObject" value="Office">Office</option>
                 </select> 
-                
+                <br>
                 <br>
                 <label class="addAstChecklist" for="DateDecomm">Resolver Queue:</label>
                 <select class="addAstChecklist" name="Resolver Queue" id="addSlct-Resolver Queue">
@@ -94,14 +93,14 @@
                     <option class="addSlctObject" value="HGUTHJ">HGUTHJ</option>
                     <option class="addSlctObject" value="NDVSFG">NDVSFG</option>
                 </select>  
-                
+                <br>
                 <br>
                 <label class="addAstChecklist" for="DateDecomm">Status:</label>
                 <select class="addAstChecklist" name="Status" id="addSlct-Status">
                     <option class="addSlctObject" value="Installed">Installed</option>
                     <option class="addSlctObject" value="Decommissioned">Decommissioned</option>
                 </select>  
-                
+                <br>
                 <br>
                 <label class="addAstChecklist" for="DateDecomm">Sub-Status:</label>
                 <select class="addAstChecklist" name="Sub-Status" id="addSlct-Sub-Status">
@@ -118,7 +117,7 @@
                     <option class="addSlctObject" value="B302132">B302132</option>
                     <option class="addSlctObject" value="K235426">K235426</option>
                 </select>  
-               
+                <br>
                 <br>
                 <label class="addAstChecklist" for="DateDecomm">Billed To:</label>
                 <select class="addAstChecklist" name="Billed To" id="addSlct-BilledTo">
@@ -129,22 +128,22 @@
                 </select>  
                 
             </box>
-            <box id="box3">
+            <box id="addbox3">
                 <label class="addAstChecklist" for="DateCreated">Date Created:</label>  
                 <input type="text" class="addAstChecklist" name="Date Created">
-                
+                <br>
                 <br>
                 <label class="addAstChecklist" for="DateActive">Date Active:</label>  
                 <input type="text" class="addAstChecklist" name="Date Active">
-                
+                <br>
                 <br>
                 <label class="addAstChecklist" for="DateInstalled">Date Installed:</label> 
                 <input type="text" class="addAstChecklist" name="Date Installed">
-                
+                <br>
                 <br>    
                 <label class="addAstChecklist" for="DateDecomm">Date Decomm:</label>
                 <input type="text" class="addAstChecklist" name="Date Decomm">
-            
+                <br>
                 <br>
                 <label class="addAstChecklist" for="DateDecomm">Maintenance Window:</label>
                 <select class="addAstChecklist" name="Maintenance Window" id="addSlct-MaintenanceWindow">
@@ -156,10 +155,20 @@
                 </select> 
                 
             </box>
-            <box id="box4">
-                <button class="button" id="submitAdd">Submit</button>
+            <box id="addbox4">
+                <a href="assetHome.html"><button class="w3-button w3-theme-d5 w3-ripple w3-border w3-border-black" id="cancelAssetAdd">Cancel</button></a>
+                <a href="assetHome.html"><button class="w3-button w3-theme-d5 w3-ripple w3-border w3-border-black" id="submitAddAsset" onclick="addAssetFunc()">Submit</button></a>
             </box>
         </box>
     </div>
+    <footer id="foot" class="center w3-theme-d5">
+        Powered By Cool Computer Club v2.0
+        <img id="cccLogo" src="../CCC_logo.jpg" width="1.5%" height="1.5%">
+    </footer>
+    <script>
+        function addAssetFunc() {
+            alert("New asset succesfully added.");
+        }
+    </script>
 </body>
 </html>
