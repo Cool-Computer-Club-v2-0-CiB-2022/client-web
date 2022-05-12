@@ -94,10 +94,11 @@
             <div class="w3-display-right">
                 <button id="btnSaveChangesAsset" class="w3-button w3-theme-d5 w3-ripple w3-border w3-border-black" onclick="saveChanges()">Save Changes To Asset</button>
                 <button id="btnDeleteAsset" class="w3-button w3-theme-d5 w3-ripple w3-border w3-border-black w3-margin-right" onclick="deleteAsset()">Delete Asset</button>
-                <br>
-                <br>
+                <br><br>
                 <a href="index.html"><button id="btnHome" class="w3-button w3-theme-d5 w3-ripple w3-border w3-border-black">Back to Home</button></a>
                 <button id="btnRequestMaintanence" class="w3-button w3-theme-d5 w3-ripple w3-border w3-border-black" onclick="maintenanceRequest()">Request Maintenance</button>
+                <br><br>
+                <button id="btnRecallAsset" class="w3-button w3-theme-d5 w3-ripple w3-border w3-border-black" onclick="recallAsset()">Recall Asset</button>
             </div>
         </div>
 
@@ -121,11 +122,19 @@
     function maintenanceRequest() {
         let response = prompt("Request Maintenance\nWho would you like maintenance from, Technician or Service Desk? \nEnter below").toLowerCase();     
         alert("Maintenance request has been sent to the "+ response +" department.");
+        window.location.href="assetHome.html";
+    }
+    function recallAsset() {
+        alert("The asset has been requested to be returned to the repair centre.");
+        window.location.href="assetHome.html";
     }
     function deleteAsset(){
-        alert("Asset Deleted");
-        window.location.href="assetHome.html";
-        confirm()
+        if(confirm("Are you sure you want to delete?") == true)
+        {
+            alert("Asset Deleted");
+            window.location.href="assetHome.html";
+        }
+        
     }
 </script>
 <script src="../scripts/api.js"></script>
