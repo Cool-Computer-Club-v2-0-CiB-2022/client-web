@@ -48,20 +48,32 @@
                 <input type="text" class="txtBox" placeholder="Date Of Birth" />
                 <br>
                 <label class="addAstChecklist" for="AccessLevel">Access Levels:</label>
-                    <select class="addAstChecklist" name="AccessLevel" id="addUser-AccessLevel">
-                        <option class="addSlctObject" value="Level-1">Level-1</option>
-                        <option class="addSlctObject" value="Level-2">Level-2</option>
-                        <option class="addSlctObject" value="Level-3">Level-3</option>
-                        <option class="addSlctObject" value="Level-4">Level-4</option>
-                        <option class="addSlctObject" value="Level-5">Level-5</option>
-                    </select> 
-                    <br>
+                <select class="addAstChecklist" name="AccessLevel" id="addUser-AccessLevel">
+                    <option class="addSlctObject" value="Level-1">Level-1</option>
+                    <option class="addSlctObject" value="Level-2">Level-2</option>
+                    <option class="addSlctObject" value="Level-3">Level-3</option>
+                    <option class="addSlctObject" value="Level-4">Level-4</option>
+                    <option class="addSlctObject" value="Level-5">Level-5</option>
+                </select> 
+                <br>
+                <br>
+                <br>
+                <h5>Current User Task:</h5>
+                <label class="addAstChecklist" for="SelectTask">Select Task:</label>
+                <select class="addAstChecklist" name="SelectTask" id="addUser-SelectTask">
+                    <option class="addSlctObject" value="Programming">Programming</option>
+                    <option class="addSlctObject" value="Security Assesment">Security Assesment</option>
+                    <option class="addSlctObject" value="QA Testing">QA Testing</option>
+                    <option class="addSlctObject" value="Service Desk Managment">Service Desk Managment</option>
+                    <option class="addSlctObject" value="Presentation">Presentation</option>
+                </select> 
             </div>
         </div>
 
         <div id="selectedPart3" class="w3-col s3 w3-display-bottomright">
             <div class="w3-display-right">
                 <button id="btnSaveChangesUser" class="w3-button w3-theme-d5 w3-ripple w3-border w3-border-black" onclick="saveChanges()">Save Changes To User</button>
+                <button id="btnDeleteUser" class="w3-button w3-theme-d5 w3-ripple w3-border w3-border-black" onclick="saveChanges()">Delete User</button>
                 <a href="index.html"><button id="btnHome" class="w3-button w3-theme-d5 w3-ripple w3-border w3-border-black">Back to Home</button></a>
             </div>
         </div>
