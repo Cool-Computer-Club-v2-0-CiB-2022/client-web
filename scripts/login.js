@@ -27,7 +27,7 @@ function login (username, password) {
 }
 
 document.addEventListener("DOMContentLoaded", function () {
-    api.request('GET', 'logout');
+    // api.request('GET', 'logout');
     document.cookie = "username=null;sameSite=Lax;max-age=31536000";
     document.cookie = "accessLevel=null;sameSite=Lax;max-age=31536000";
 });
