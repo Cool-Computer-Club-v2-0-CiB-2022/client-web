@@ -1,4 +1,4 @@
-// document.getElementById("btnSearchAssets").addEventListener('click', searchAsset);
+document.getElementById("btnSearchAssets").addEventListener('click', searchAsset);
 
 // soo that the names of fields arent whats in the db
 let fieldNames = {
@@ -21,12 +21,23 @@ let fieldNames = {
     maintenanceWindow: "Maintenance Window"
 };
 
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", getList);
+
+function searchAsset() {
+    // get search query
+    query = document.getElementsByClassName("searchBox")[0].value;
+    getList(query);
+}
+
+function getList(query) {
     api.request('GET', 'report.json',
     function (resp) {
         // load object
         let assets = JSON.parse(resp.responseText);
         let newHtml = "";
+        if (!(typeof query === "string" || query instanceof String)) {
+            query = "";
+        }
         // go through each asset and generate its html
         for (let asset of Object.values(assets.data)) {
             let assetHtml = "<li>";
@@ -34,9 +45,14 @@ document.addEventListener("DOMContentLoaded", function () {
             for (let field of Object.keys(fieldNames)) {
                 assetHtml += "<b>" + fieldNames[field] + ":</b> " + asset[field] + " | ";
             }
-            newHtml += assetHtml.slice(0, -3) + "</li>";
+            if (assetHtml.toLowerCase().includes(query)) {
+                newHtml += assetHtml.slice(0, -3) + "</li>";
+            }
+        }
+        if (newHtml == "") {
+            newHtml = "<h2>No assets found</h2>"
         }
         // add to html
         document.getElementById("assetTableInsert").innerHTML = newHtml;
     });
-});
+}
