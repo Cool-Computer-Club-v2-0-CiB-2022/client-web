@@ -24,7 +24,7 @@
 
 
 
-    <div id="mainDiv2">
+    <div id="mainDiv2" class="w3-padding">
         <box id="mainBox2">
             <h2>Add User</h2>
             <box id="addUserBox1">
@@ -54,12 +54,7 @@
                     <option class="addSlctUserObject" value="Management Staff">Management Staff</option>
                     <option class="addSlctUserObject" value="No Asset Management Staff">No Asset Management Staff</option>
                     <option class="addSlctUserObject" value="Technician Staff">Technician Staff</option>
-                </select> 
-                <br>
-
-                <label class="addUserChecklist" for="DateAdded">DateAdded:</label>
-                <input type="text" class="addUserChecklist" name="DateAdded">
-                <br>
+                </select>
             </box> 
 
 
@@ -68,8 +63,12 @@
 
 
             <box id="addUserBox2">
-                <label class="addAstChecklist" for="AccessLevel">Access Levels:</label>
-                <select class="addAstChecklist" name="AccessLevel" id="addUser-AccessLevel">
+                <label class="addUserChecklist" for="DateAdded">DateAdded:</label>
+                <input type="text" class="addUserChecklist" name="DateAdded">
+                <br>
+
+                <label class="addUserChecklist" for="AccessLevel">Access Levels:</label>
+                <select class="addUserChecklist" name="AccessLevel" id="addUser-AccessLevel">
                     <option class="addSlctObject" value="Level-1">Level-1</option>
                     <option class="addSlctObject" value="Level-2">Level-2</option>
                     <option class="addSlctObject" value="Level-3">Level-3</option>
@@ -88,10 +87,11 @@
 
 
             </box>
-            <box id="addUserbox4">
-                <a href="userHome.html"><button class="w3-button w3-theme-d5 w3-ripple w3-border w3-border-black" id="cancelUserAdd">Cancel</button></a>
+            <div id="addUserbox4">
                 <a href="userHome.html"><button class="w3-button w3-theme-d5 w3-ripple w3-border w3-border-black" id="submitAddUser" onclick="generateReport()">Submit</button></a>
-            </box>
+                <br><br>
+                <a href="userHome.html"><button class="w3-button w3-theme-d5 w3-ripple w3-border w3-border-black" id="cancelUserAdd">Cancel</button></a>
+            </div>
         </box>
     </div>
 
