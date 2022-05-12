@@ -1,9 +1,10 @@
 document.getElementById("btnSearchUsers").addEventListener('click', searchAsset); 
 
-let fieldNames = {
-    userID: "UserID",
-    username: "User Name",
-    accessLevel: "User Job Role"
+let accessLevel = {
+    manager: "Manager",
+    technician: "Technician",
+    general: "General",
+    serviceDesk: "Service Desk",
 };
 
 
@@ -24,11 +25,11 @@ function getList(query) {
         }
         for (let user of Object.values(users)) {
             let userHtml = "<a href='selectedUser.html?id=" + user["userID"] + "'><li>";
-            for (let field of Object.keys(fieldNames)) {
-                userHtml += "<b>" + fieldNames[field] + ":</b> " + user[field] + " | ";
-            }
+            userHtml += "<b>UserID:</b> #" + ("00000" + user.userID).slice(-6) + " | ";
+            userHtml += "<b>User Name:</b> " + user.username + " | ";
+            userHtml += "<b>User Job Role:</b> " + accessLevel[user.accessLevel];
             if (userHtml.toLowerCase().includes(query)) {
-                newHtml += userHtml.slice(0, -3) + "</li></a>";
+                newHtml += userHtml + "</li></a>";
             }
         }
         if (newHtml == "") {
